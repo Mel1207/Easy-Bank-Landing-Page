@@ -17,12 +17,35 @@ body {
   margin: auto;
 }
 
-h1 {
-  color: #31d35c;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1em 0;
+  background: #fff;
 }
-
-h2 {
-  color: #2bb7da;
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .container .nav-logo {
+  height: 1.5em;
+}
+.navbar .container .nav-logo img {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.navbar .container .nav-links {
+  display: flex;
+}
+.navbar .container .nav-links li {
+  margin: 0 10px;
+}
+.navbar .container .nav-links li a {
+  color: #9698a6;
 }
 
 ul {
@@ -34,9 +57,11 @@ a {
 }
 
 a.btn {
-  padding: 1em 3em;
+  padding: 0.8em 2.8em;
   background: linear-gradient(90deg, #31d35c 0%, #2bb7da 100%);
   border-radius: 50px;
+  font-weight: 600;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
