@@ -90,10 +90,20 @@ body {
   justify-content: space-between;
 }
 .section-1 .container .features .box-feature {
+  margin-top: 10px;
   width: 24%;
+}
+.section-1 .container .features .box-feature img {
+  margin-bottom: 2em;
 }
 .section-1 .container .features .box-feature .global-text {
   margin: 0;
+}
+.section-1 .container .features .box-feature h3 {
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #2d314d;
+  margin-bottom: 0.5em;
 }
 
 ul {
