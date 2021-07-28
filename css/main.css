@@ -78,6 +78,23 @@ body {
   line-height: 1.5em;
 }
 
+.section-1 {
+  padding: 4.5em 0;
+  width: 100%;
+  background: #f3f4f6;
+}
+.section-1 .container h2 {
+  font-weight: 400;
+  font-size: 1.8em;
+  color: #2d314d;
+  margin-bottom: 0.5em;
+}
+.section-1 .container p {
+  color: #9698a6;
+  margin-bottom: 2.5em;
+  line-height: 1.5em;
+}
+
 ul {
   list-style: none;
 }
