@@ -13,13 +13,17 @@ body
     max-width: 1400px
     margin: auto 
 
+// --------------------------------------------------------------- NAVBAR --------------------------------------------------------------- //
+// --------------------------------------------------------------- NAVBAR --------------------------------------------------------------- //
 .navbar 
     position: fixed
+    display: flex
+    align-items: center
     top: 0
     left: 0
     right: 0
-    padding: 1em 0
     background: $white
+    height: 8vh
 
     .container 
         display: flex
@@ -42,3 +46,22 @@ body
 
                 a 
                     color: $secondary-color
+
+// --------------------------------------------------------------- SECTION HEADER --------------------------------------------------------------- //
+// --------------------------------------------------------------- SECTION HEADER --------------------------------------------------------------- //
+.section-header
+    background: $dimWhite
+    margin-top: 8vh
+    height: 75vh
+    position: relative
+
+
+    .container 
+        .header-text
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+
+            h1 
+                font-size: 2.5em
+                font-weight: 400
