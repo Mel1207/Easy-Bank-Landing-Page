@@ -84,6 +84,17 @@ body {
   color: #2d314d;
   margin-bottom: 0.5em;
 }
+.section-1 .container .features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-1 .container .features .box-feature {
+  width: 24%;
+}
+.section-1 .container .features .box-feature .global-text {
+  margin: 0;
+}
 
 ul {
   list-style: none;
