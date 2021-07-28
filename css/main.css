@@ -92,6 +92,10 @@ a.btn {
   border-radius: 50px;
   font-weight: 600;
   color: #fff;
+  transition: all 0.3s;
+}
+a.btn:hover {
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=main.css.map */
