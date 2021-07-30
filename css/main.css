@@ -122,7 +122,7 @@ body {
 }
 .section-2 .container .cards-list .card {
   background: #fff;
-  max-width: 300px;
+  width: 23%;
   border-radius: 8px;
 }
 .section-2 .container .cards-list .card img {
@@ -130,8 +130,22 @@ body {
   height: 225px;
   border-radius: 8px 8px 0 0;
 }
-.section-2 .container .cards-list .card div {
+.section-2 .container .cards-list .card .card-details {
   padding: 25px;
+}
+.section-2 .container .cards-list .card .card-details small {
+  display: block;
+  color: #9698a6;
+  margin-bottom: 1em;
+}
+.section-2 .container .cards-list .card .card-details h4 {
+  color: #2d314d;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-bottom: 0.8em;
+}
+.section-2 .container .cards-list .card .card-details .card-text {
+  color: #9698a6;
 }
 
 ul {
