@@ -157,6 +157,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.section-footer .container .footer-logos ul {
+  display: flex;
+}
 
 ul {
   list-style: none;
