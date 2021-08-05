@@ -159,6 +159,11 @@ body {
 }
 .section-footer .container .footer-logos ul {
   display: flex;
+  margin-top: 20px;
+  list-style: none;
+}
+.section-footer .container .footer-logos ul li {
+  margin-right: 10px;
 }
 
 ul {
