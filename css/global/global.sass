@@ -161,13 +161,20 @@ body
 .section-footer 
     background: $primary-color
     width: 100%
-    padding: 1em 0
+    padding: 3em 0
+    height: 200px
+    display: flex
+    align-items: center
 
     .container
         display: flex
         justify-content: space-between
 
         .footer-logos 
+            display: flex 
+            justify-content: space-between
+            flex-direction: column
+
             ul 
                 display: flex
                 margin-top: 20px
@@ -175,4 +182,13 @@ body
 
                 li 
                     margin-right: 10px
+
+        .footer-link-group1, .footer-link-group2 
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+
+            li 
+                a 
+                    color: $white
 
