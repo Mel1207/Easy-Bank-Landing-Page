@@ -46,8 +46,18 @@ body
             li 
                 margin: 0 10px
 
-                a 
+                .link
+                    position: relative
                     color: $secondary-color
+
+                    &::after
+                        position: absolute
+                        content: ""
+                        bottom: -34px
+                        left: 0
+                        height: 3px
+                        width: 100%
+                        background: $primary-bg
 
 // --------------------------------------------------------------- SECTION HEADER --------------------------------------------------------------- //
 // --------------------------------------------------------------- SECTION HEADER --------------------------------------------------------------- //
