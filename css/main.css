@@ -220,6 +220,10 @@ body {
   .navbar a.btn {
     display: none;
   }
+
+  .section-1 .features {
+    flex-direction: column;
+  }
 }
 ul {
   list-style: none;
