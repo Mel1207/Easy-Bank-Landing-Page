@@ -213,6 +213,14 @@ body {
   color: #9698a6;
 }
 
+@media screen and (max-width: 768px) {
+  .navbar .nav-links {
+    display: none !important;
+  }
+  .navbar a.btn {
+    display: none;
+  }
+}
 ul {
   list-style: none;
 }
