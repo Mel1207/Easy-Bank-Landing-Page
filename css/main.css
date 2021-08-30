@@ -68,6 +68,20 @@ body {
   width: 100%;
   opacity: 1;
 }
+.navbar .container .hamburger {
+  height: 35px;
+  width: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.navbar .container .hamburger .line {
+  height: 2px;
+  background: #2d314d;
+  width: 100%;
+}
 
 .section-header {
   background: url(../images/bg-intro-desktop.svg);
