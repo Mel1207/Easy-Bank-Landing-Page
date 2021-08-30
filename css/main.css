@@ -103,6 +103,14 @@ body {
   background: #fff;
 }
 
+.open {
+  display: block !important;
+}
+
+.overflow-hide {
+  overflow: hidden;
+}
+
 .section-header {
   background: url(../images/bg-intro-desktop.svg);
   margin-top: 8vh;
