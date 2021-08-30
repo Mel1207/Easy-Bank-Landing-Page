@@ -177,37 +177,49 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.section-footer .container .footer-logos {
+.section-footer .container .left-pane {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-footer .container .left-pane .footer-logos {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-.section-footer .container .footer-logos ul {
+.section-footer .container .left-pane .footer-logos ul {
   display: flex;
-  margin-top: 20px;
+  margin-top: 40px;
   list-style: none;
 }
-.section-footer .container .footer-logos ul li {
+.section-footer .container .left-pane .footer-logos ul li {
   margin-right: 10px;
 }
-.section-footer .container .footer-link-group1, .section-footer .container .footer-link-group2 {
+.section-footer .container .left-pane .footer-link-group1, .section-footer .container .left-pane .footer-link-group2 {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-.section-footer .container .footer-link-group1 li a, .section-footer .container .footer-link-group2 li a {
+.section-footer .container .left-pane .footer-link-group1 li, .section-footer .container .left-pane .footer-link-group2 li {
+  margin-bottom: 15px;
+}
+.section-footer .container .left-pane .footer-link-group1 li a, .section-footer .container .left-pane .footer-link-group2 li a {
   color: #fff;
 }
-.section-footer .container .footer-link-group3 {
+.section-footer .container .left-pane .footer-link-group1 li:nth-child(3), .section-footer .container .left-pane .footer-link-group2 li:nth-child(3) {
+  margin: 0;
+}
+.section-footer .container .footer-link-group3.right-pane {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
 }
-.section-footer .container .footer-link-group3 a.btn {
+.section-footer .container .footer-link-group3.right-pane a.btn {
   width: max-content;
 }
-.section-footer .container .footer-link-group3 span {
+.section-footer .container .footer-link-group3.right-pane span {
   margin-top: 20px;
   display: block;
   color: #9698a6;

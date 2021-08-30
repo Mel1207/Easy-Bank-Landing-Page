@@ -189,29 +189,39 @@ body
         display: flex
         justify-content: space-between
 
-        .footer-logos 
-            display: flex 
+        .left-pane 
+            width: 45%
+            display: flex
+            align-items: center
             justify-content: space-between
-            flex-direction: column
 
-            ul 
+            .footer-logos 
+                display: flex 
+                justify-content: space-between
+                flex-direction: column
+
+                ul 
+                    display: flex
+                    margin-top: 40px
+                    list-style: none
+
+                    li 
+                        margin-right: 10px
+
+            .footer-link-group1, .footer-link-group2 
                 display: flex
-                margin-top: 20px
-                list-style: none
+                justify-content: space-between
+                flex-direction: column
 
                 li 
-                    margin-right: 10px
+                    margin-bottom: 15px
+                    a 
+                        color: $white
+                        
+                li:nth-child(3)
+                    margin: 0
 
-        .footer-link-group1, .footer-link-group2 
-            display: flex
-            justify-content: space-between
-            flex-direction: column
-
-            li 
-                a 
-                    color: $white
-
-        .footer-link-group3 
+        .footer-link-group3.right-pane
             display: flex
             flex-direction: column
             justify-content: space-between
