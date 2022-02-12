@@ -159,21 +159,21 @@ body {
   color: #2d314d;
   margin-bottom: 0.5em;
 }
-.section-1 .container .features {
+.section-1 .features {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
 }
-.section-1 .container .features .box-feature {
+.section-1 .features .box-feature {
   margin-top: 10px;
 }
-.section-1 .container .features .box-feature img {
+.section-1 .features .box-feature img {
   margin-bottom: 2em;
 }
-.section-1 .container .features .box-feature .global-text {
+.section-1 .features .box-feature .global-text {
   margin: 0;
 }
-.section-1 .container .features .box-feature h3 {
+.section-1 .features .box-feature h3 {
   font-size: 1.6em;
   font-weight: 400;
   color: #2d314d;
@@ -190,35 +190,35 @@ body {
   color: #2d314d;
   margin-bottom: 1em;
 }
-.section-2 .container .cards-list {
+.section-2 .cards-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
 }
-.section-2 .container .cards-list .card {
+.section-2 .cards-list .card {
   background: #fff;
   border-radius: 8px;
 }
-.section-2 .container .cards-list .card img {
+.section-2 .cards-list .card img {
   width: 100%;
   height: 225px;
   border-radius: 8px 8px 0 0;
 }
-.section-2 .container .cards-list .card .card-details {
+.section-2 .cards-list .card .card-details {
   padding: 25px;
 }
-.section-2 .container .cards-list .card .card-details small {
+.section-2 .cards-list .card .card-details small {
   display: block;
   color: #9698a6;
   margin-bottom: 1em;
 }
-.section-2 .container .cards-list .card .card-details h4 {
+.section-2 .cards-list .card .card-details h4 {
   color: #2d314d;
   font-size: 1.3em;
   font-weight: 400;
   margin-bottom: 0.8em;
 }
-.section-2 .container .cards-list .card .card-details .card-text {
+.section-2 .cards-list .card .card-details .card-text {
   color: #9698a6;
 }
 
@@ -282,7 +282,16 @@ body {
   color: #9698a6;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
+  .section-1 .features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-2 .cards-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 980px) {
   .navbar .nav-links {
     display: none !important;
   }
@@ -292,14 +301,14 @@ body {
   .navbar .hamburger {
     display: flex !important;
   }
-
-  .section-1 .features {
-    flex-direction: column;
-  }
 }
 @media screen and (max-width: 600px) {
   .container {
     width: 90%;
+  }
+
+  .section-1 .features, .section-2 .cards-list {
+    grid-template-columns: 1fr;
   }
 }
 ul {

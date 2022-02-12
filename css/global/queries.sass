@@ -2,9 +2,16 @@
 
 @media screen and ( max-width: 1200px )
     
-@media screen and ( max-width: 1080px ) 
-    
-@media screen and ( max-width: 768px )
+@media screen and ( max-width: 1080px )
+    .section-1 
+        .features
+            grid-template-columns: 1fr 1fr
+
+    .section-2 
+        .cards-list
+            grid-template-columns: 1fr 1fr
+
+@media screen and (max-width: 980px)
     .navbar
         .nav-links
             display: none !important
@@ -14,14 +21,16 @@
 
         .hamburger
             display: flex !important
-
-    .section-1
-        .features
-            flex-direction: column
+    
+@media screen and ( max-width: 768px )
+    
 
 @media screen and ( max-width: 600px )
     .container
         width: 90%
+
+    .section-1 .features, .section-2 .cards-list
+        grid-template-columns: 1fr
 
 
 @media screen and ( max-width: 425px )
