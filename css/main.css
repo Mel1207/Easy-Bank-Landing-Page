@@ -263,7 +263,7 @@ body {
   justify-content: space-between;
 }
 .section-footer .container .left-pane {
-  width: 45%;
+  width: 500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
