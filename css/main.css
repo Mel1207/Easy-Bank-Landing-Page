@@ -153,7 +153,7 @@ body {
   width: 100%;
   background: #f3f4f6;
 }
-.section-1 .container h2 {
+.section-1 h2 {
   font-weight: 400;
   font-size: 1.8em;
   color: #2d314d;
@@ -162,13 +162,14 @@ body {
 .section-1 .features {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 20px;
+  grid-column-gap: 25px;
 }
 .section-1 .features .box-feature {
   margin-top: 10px;
 }
 .section-1 .features .box-feature img {
   margin-bottom: 2em;
+  display: block;
 }
 .section-1 .features .box-feature .global-text {
   margin: 0;
@@ -193,7 +194,7 @@ body {
 .section-2 .cards-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 20px;
+  grid-column-gap: 25px;
 }
 .section-2 .cards-list .card {
   background: #fff;
@@ -285,8 +286,23 @@ body {
 }
 
 @media screen and (max-width: 1080px) {
+  .section-1 h2, .section-1 p {
+    text-align: center;
+  }
+  .section-1 br {
+    display: none;
+  }
   .section-1 .features {
     grid-template-columns: 1fr 1fr;
+  }
+  .section-1 .features .box-feature {
+    margin-bottom: 2.5em;
+  }
+  .section-1 .features .box-feature img {
+    margin: 0 auto 2em;
+  }
+  .section-1 .features .box-feature h3, .section-1 .features .box-feature p {
+    text-align: center;
   }
 
   .section-2 .cards-list {
