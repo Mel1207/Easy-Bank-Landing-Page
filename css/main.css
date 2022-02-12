@@ -28,7 +28,7 @@ body {
   right: 0;
   background: #fff;
   height: 88px;
-  z-index: 10;
+  z-index: 150;
 }
 .navbar .container {
   display: flex;
@@ -69,37 +69,62 @@ body {
   width: 100%;
   opacity: 1;
 }
-.navbar .container .hamburger {
-  height: 25px;
-  width: 50px;
+
+.hamburger {
+  height: 20px;
+  width: 40px;
   display: none;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   cursor: pointer;
+  transition: all 0.3s;
 }
-.navbar .container .hamburger .line {
+.hamburger .line {
   height: 2px;
   background: #2d314d;
   width: 100%;
+  transition: all 0.3s;
+}
+
+.hamburger-click .line-1 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg) translate(9px, 6px);
+  top: -3px;
+  left: 8px;
+}
+.hamburger-click .line-2 {
+  width: 0;
+  opacity: 0;
+}
+.hamburger-click .line-3 {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(6px, -5px);
+  top: 39px;
+  left: 8px;
 }
 
 .menu-mobile-container {
   display: none;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  top: 88px;
-  position: absolute;
-  z-index: 9999;
+  top: 0;
+  position: fixed;
+  z-index: 99;
   overflow: hidden;
   background: linear-gradient(180deg, rgba(45, 49, 78, 0.84) 0%, rgba(45, 49, 78, 0.38) 100%);
+  padding: 0 20px;
 }
 .menu-mobile-container .menu-mobile {
   position: relative;
   height: 400px;
   max-width: 400px;
   left: 50%;
-  top: 20px;
+  top: 110px;
   transform: translateX(-50%);
   background: #fff;
   display: flex;

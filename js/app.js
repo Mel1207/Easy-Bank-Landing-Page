@@ -7,6 +7,7 @@ const body = document.querySelector('body')
 const toggleMenu = (e) => {
     mobileMenuContainer.classList.toggle('open')
     body.classList.toggle('overflow-hide')
+    hamburger.classList.toggle('hamburger-click')
 }
 
 hamburger.addEventListener('click', toggleMenu)
