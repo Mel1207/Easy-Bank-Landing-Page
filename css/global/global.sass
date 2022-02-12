@@ -2,12 +2,14 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+  
 
 body 
     margin: 0
     padding: 0
     font-family: 'Public Sans', sans-serif
     background: $dimWhite
+    overflow-x: hidden
 
 .container
     width: 80%
@@ -24,7 +26,6 @@ body
     left: 0
     right: 0
     background: $white
-    // height: 8vh
     height: 88px
     z-index: 10
 
@@ -170,14 +171,12 @@ body
 
         
         .features
-            display: flex
-            align-items: center
-            justify-content: space-between
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr
+            grid-column-gap: 20px
 
             .box-feature
                 margin-top: 10px
-                width: 24%
-                // max-width: 300px
 
                 img 
                     margin-bottom: 2em
@@ -205,13 +204,14 @@ body
             margin-bottom: 1em
 
         .cards-list
-            display: flex
-            justify-content: space-between
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr
+            grid-column-gap: 20px
 
             .card
                 background: $white
                 // width: 23%
-                max-width: 300px
+                // max-width: 300px
                 border-radius: 8px
 
                 img 

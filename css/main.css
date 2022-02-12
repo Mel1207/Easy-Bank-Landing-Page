@@ -10,6 +10,7 @@ body {
   padding: 0;
   font-family: "Public Sans", sans-serif;
   background: #FAFAFA;
+  overflow-x: hidden;
 }
 
 .container {
@@ -159,13 +160,12 @@ body {
   margin-bottom: 0.5em;
 }
 .section-1 .container .features {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
 }
 .section-1 .container .features .box-feature {
   margin-top: 10px;
-  width: 24%;
 }
 .section-1 .container .features .box-feature img {
   margin-bottom: 2em;
@@ -191,12 +191,12 @@ body {
   margin-bottom: 1em;
 }
 .section-2 .container .cards-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
 }
 .section-2 .container .cards-list .card {
   background: #fff;
-  max-width: 300px;
   border-radius: 8px;
 }
 .section-2 .container .cards-list .card img {
