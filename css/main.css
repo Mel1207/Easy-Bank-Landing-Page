@@ -249,6 +249,7 @@ body {
   background: #fff;
   border-radius: 8px;
   margin-bottom: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.02);
 }
 .section-2 .cards-list .card img {
   width: 100%;
@@ -281,6 +282,7 @@ body {
   height: 250px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .section-footer .container {
   display: flex;
@@ -321,6 +323,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 20px;
 }
 .section-footer .footer-link-group3.right-pane a.btn {
   width: max-content;
@@ -329,6 +332,20 @@ body {
   margin-top: 20px;
   display: block;
   color: #9698a6;
+}
+.section-footer .attribution {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 13px;
+  opacity: 0.3;
+  font-weight: 300;
+  text-align: center;
+}
+.section-footer .attribution a {
+  color: #fff;
 }
 
 @media screen and (max-width: 1200px) {
