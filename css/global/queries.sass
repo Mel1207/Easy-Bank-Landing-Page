@@ -1,5 +1,3 @@
-@media screen and ( max-width: 1440px )
-
 @media screen and ( max-width: 1200px )
     .section-header
         .header-text
@@ -11,8 +9,25 @@
     .section-header
         .container
             flex-direction: column-reverse
-    
 
+        .header-bg
+            width: 100%
+            
+            &::before
+                background-size: 150%
+                width: 115%
+                height: 280px
+
+            &::after
+                right: 0
+                top: -25%
+                background-size: 98%
+                background-position: center bottom
+
+        .header-text
+            padding: 5em 0 5em 0
+            text-align: center
+    
     .section-1 
         h2, p
             text-align: center
@@ -72,17 +87,16 @@
         .right-pane
             align-items: center !important
 
-
-@media screen and ( max-width: 768px )
-    
-
 @media screen and ( max-width: 600px )
+    .section-header
+        .header-bg
+            &::before
+                background-position: 9% 88%
+
     .container
         width: 90%
 
     .section-1 .features, .section-2 .cards-list
         grid-template-columns: 1fr
 
-
-@media screen and ( max-width: 425px )
 

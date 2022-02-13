@@ -340,6 +340,24 @@ body {
   .section-header .container {
     flex-direction: column-reverse;
   }
+  .section-header .header-bg {
+    width: 100%;
+  }
+  .section-header .header-bg::before {
+    background-size: 150%;
+    width: 115%;
+    height: 280px;
+  }
+  .section-header .header-bg::after {
+    right: 0;
+    top: -25%;
+    background-size: 98%;
+    background-position: center bottom;
+  }
+  .section-header .header-text {
+    padding: 5em 0 5em 0;
+    text-align: center;
+  }
 
   .section-1 h2, .section-1 p {
     text-align: center;
@@ -402,6 +420,10 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
+  .section-header .header-bg::before {
+    background-position: 9% 88%;
+  }
+
   .container {
     width: 90%;
   }
