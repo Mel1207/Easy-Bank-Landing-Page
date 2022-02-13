@@ -162,27 +162,32 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.section-header .container .header-text {
+.section-header .header-text {
   flex: 2;
 }
-.section-header .container .header-text h1 {
+.section-header .header-text h1 {
   font-size: 2.5em;
   font-weight: 400;
   color: #2d314d;
   margin-bottom: 0.5em;
 }
-.section-header .container .header-bg {
+.section-header .header-bg {
   position: relative;
   flex: 3;
   height: 100%;
 }
-.section-header .container .header-bg .phone-mockup {
+.section-header .header-bg::after {
+  content: "";
   position: absolute;
+  background: url("../images/image-mockups.png");
+  height: 135%;
+  width: 100%;
   z-index: 12;
+  top: -20%;
   right: -30%;
-  top: -15%;
+  background-repeat: no-repeat;
 }
-.section-header .container .header-bg::before {
+.section-header .header-bg::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -326,7 +331,16 @@ body {
   color: #9698a6;
 }
 
+@media screen and (max-width: 1200px) {
+  .section-header .header-text p br {
+    display: none;
+  }
+}
 @media screen and (max-width: 1080px) {
+  .section-header .container {
+    flex-direction: column-reverse;
+  }
+
   .section-1 h2, .section-1 p {
     text-align: center;
   }
